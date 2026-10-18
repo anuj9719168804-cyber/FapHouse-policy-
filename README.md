@@ -37,7 +37,7 @@ emoji styling, and mobile-friendly layouts.
 
 ## 🌐 Live Website
 
-🔗 https://anuj9719168804-cyber.github.io/faphouse-privacy-policy/
+🔗 https://anuj9719168804-cyber.github.io/FapHouse-policy-/
 
 ## 📂 Project Structure
 
