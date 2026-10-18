@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="Privacy Policy for FapHouse Downloader Bot. Learn how submitted links and technical information may be processed.">
+  <meta name="description" content="Privacy Policy for FapHouse Downloader Bot. Learn how submitted FapHouse links and related technical information may be processed.">
   <title>Privacy Policy | FapHouse Downloader Bot</title>
+
   <style>
     :root {
       color-scheme: dark;
@@ -19,8 +20,15 @@
       --border: rgba(164, 180, 220, .18);
       --shadow: 0 24px 70px rgba(0,0,0,.35);
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background:
@@ -30,157 +38,493 @@
       color: var(--text);
       font: 16px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    a { color: #8de9e0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { width: min(980px, calc(100% - 32px)); margin: 0 auto; padding: 36px 0 54px; }
+
+    a {
+      color: #8de9e0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 54px;
+    }
+
     .hero {
-      position: relative; overflow: hidden; padding: clamp(26px, 6vw, 54px);
-      border: 1px solid var(--border); border-radius: 28px;
-      background: linear-gradient(135deg, rgba(30,39,72,.96), rgba(14,21,38,.96));
+      position: relative;
+      overflow: hidden;
+      padding: clamp(26px, 6vw, 54px);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(
+        135deg,
+        rgba(30,39,72,.96),
+        rgba(14,21,38,.96)
+      );
       box-shadow: var(--shadow);
     }
+
     .hero::after {
-      content: "🔐"; position: absolute; right: 5%; top: 8%; font-size: clamp(64px, 12vw, 112px);
-      opacity: .13; transform: rotate(12deg); pointer-events: none;
+      content: "🔐";
+      position: absolute;
+      right: 5%;
+      top: 8%;
+      font-size: clamp(64px, 12vw, 112px);
+      opacity: .13;
+      transform: rotate(12deg);
+      pointer-events: none;
     }
+
     .badge {
-      display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px;
-      border: 1px solid rgba(141,233,224,.28); border-radius: 999px;
-      background: rgba(53,214,197,.08); color: #a8fff4; font-size: 12px;
-      font-weight: 800; letter-spacing: .13em; text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: 1px solid rgba(141,233,224,.28);
+      border-radius: 999px;
+      background: rgba(53,214,197,.08);
+      color: #a8fff4;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
     }
-    h1 { max-width: 720px; margin: 18px 0 12px; font-size: clamp(32px, 7vw, 54px); line-height: 1.1; letter-spacing: -.04em; }
-    .subtitle { max-width: 650px; margin: 0; color: var(--muted); font-size: clamp(15px, 2.5vw, 18px); }
-    .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .meta span { padding: 8px 12px; border: 1px solid var(--border); border-radius: 12px; color: #d5def4; background: rgba(255,255,255,.035); font-size: 13px; }
-    .layout { display: grid; grid-template-columns: 240px minmax(0,1fr); gap: 22px; margin-top: 22px; align-items: start; }
-    nav, main { min-width: 0; border: 1px solid var(--border); border-radius: 22px; background: var(--panel); box-shadow: var(--shadow); }
-    nav { position: sticky; top: 16px; padding: 20px; }
-    nav h2 { margin: 0 0 12px; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-    nav a { display: block; padding: 8px 0; color: #dce5fb; font-size: 14px; }
-    main { padding: clamp(20px, 4vw, 38px); }
-    section { scroll-margin-top: 18px; padding: 0 0 24px; margin: 0 0 24px; border-bottom: 1px solid var(--border); }
-    section:last-child { margin: 0; padding: 0; border: 0; }
-    h2 { margin: 0 0 12px; font-size: 21px; line-height: 1.35; }
-    p { margin: 10px 0; color: #d2dbef; }
-    ul { padding-left: 22px; color: #d2dbef; }
-    li { padding: 3px 0; }
-    .notice { padding: 15px 16px; border: 1px solid rgba(255,190,92,.25); border-radius: 14px; background: rgba(255,190,92,.07); color: #ffe0ac; }
-    .contact { padding: 18px; border: 1px solid rgba(139,124,255,.28); border-radius: 16px; background: var(--panel-2); }
-    .contact p { margin: 5px 0; }
-    footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px 8px 0; }
-    .brand { font-weight: 800; color: white; }
+
+    h1 {
+      max-width: 720px;
+      margin: 18px 0 12px;
+      font-size: clamp(32px, 7vw, 54px);
+      line-height: 1.1;
+      letter-spacing: -.04em;
+    }
+
+    .subtitle {
+      max-width: 650px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(15px, 2.5vw, 18px);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .meta span {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: #d5def4;
+      background: rgba(255,255,255,.035);
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 240px minmax(0,1fr);
+      gap: 22px;
+      margin-top: 22px;
+      align-items: start;
+    }
+
+    nav,
+    main {
+      min-width: 0;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    nav {
+      position: sticky;
+      top: 16px;
+      padding: 20px;
+    }
+
+    nav h2 {
+      margin: 0 0 12px;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    nav a {
+      display: block;
+      padding: 8px 0;
+      color: #dce5fb;
+      font-size: 14px;
+    }
+
+    main {
+      padding: clamp(20px, 4vw, 38px);
+    }
+
+    section {
+      scroll-margin-top: 18px;
+      padding: 0 0 24px;
+      margin: 0 0 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 10px 0;
+      color: #d2dbef;
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+      color: #d2dbef;
+    }
+
+    li {
+      padding: 3px 0;
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 15px 16px;
+      border: 1px solid rgba(53,214,197,.25);
+      border-radius: 14px;
+      background: rgba(53,214,197,.07);
+      color: #c8fff7;
+    }
+
+    .contact {
+      padding: 18px;
+      border: 1px solid rgba(139,124,255,.28);
+      border-radius: 16px;
+      background: var(--panel-2);
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 24px 8px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: white;
+    }
+
     @media (max-width: 720px) {
-      .wrap { width: min(100% - 20px, 980px); padding-top: 12px; }
-      .layout { grid-template-columns: 1fr; }
-      nav { position: static; }
-      nav .links { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 12px; }
-      .hero { border-radius: 22px; }
+      .wrap {
+        width: min(100% - 20px, 980px);
+        padding-top: 12px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: static;
+      }
+
+      nav .links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 0 12px;
+      }
+
+      .hero {
+        border-radius: 22px;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
+
     <header class="hero">
       <span class="badge">🛡️ Official Privacy Center</span>
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">A clear overview of how <span class="brand">FapHouse Downloader Bot</span> may process information when you use the service.</p>
+
+      <h1>FapHouse Downloader Bot</h1>
+
+      <p class="subtitle">
+        Privacy Policy explaining how information may be processed
+        when you use <span class="brand">FapHouse Downloader Bot</span>
+        on Telegram to process supported FapHouse links.
+      </p>
+
       <div class="meta">
         <span>🤖 Telegram Bot</span>
+        <span>🔗 FapHouse Links</span>
         <span>🔐 Privacy &amp; Data</span>
         <span>🗓️ Updated: 18 October 2026</span>
       </div>
     </header>
 
     <div class="layout">
+
       <nav aria-label="Policy contents">
         <h2>📑 Contents</h2>
+
         <div class="links">
-          <a href="#overview">✨ Overview</a>
+          <a href="#overview">✨ About the Bot</a>
+          <a href="#features">🎬 Bot Features</a>
           <a href="#data">📥 Information</a>
-          <a href="#use">⚙️ How data is used</a>
-          <a href="#third-party">🔗 Third parties</a>
+          <a href="#use">⚙️ Processing</a>
+          <a href="#third-party">🔗 Third Parties</a>
           <a href="#retention">🗄️ Storage</a>
-          <a href="#choices">🧑‍💻 Your choices</a>
-          <a href="#safety">🛡️ Appropriate use</a>
+          <a href="#sharing">🤝 Data Sharing</a>
+          <a href="#choices">🧑‍💻 Your Choices</a>
+          <a href="#safety">🛡️ Responsible Use</a>
           <a href="#changes">🔄 Updates</a>
           <a href="#contact">📩 Contact</a>
         </div>
       </nav>
 
       <main>
+
         <section id="overview">
-          <h2>✨ 1. Overview</h2>
-          <p>This policy describes possible information handling when you interact with FapHouse Downloader Bot on Telegram. Actual processing depends on the bot's deployed code, configuration, and connected services. The operator should keep this page accurate as the service changes.</p>
+          <h2>✨ 1. About FapHouse Downloader Bot</h2>
+
+          <p>
+            FapHouse Downloader Bot is a Telegram-based tool designed
+            to process supported FapHouse links and attempt to retrieve
+            available video information or content.
+          </p>
+
+          <p>
+            Users can submit a supported link through Telegram.
+            The bot processes the request and may return an available
+            result when the link is accessible and processing succeeds.
+          </p>
+
+          <p>
+            The bot's functionality depends on its deployed code,
+            configuration, link availability, and the external services
+            required to process a request.
+          </p>
+        </section>
+
+        <section id="features">
+          <h2>🎬 2. FapHouse Bot Features</h2>
+
+          <p>Depending on the currently deployed implementation, the bot may provide:</p>
+
+          <ul>
+            <li>🔗 Processing of supported FapHouse links;</li>
+            <li>🎬 Retrieval of available video information;</li>
+            <li>📥 Delivery of a processing result through Telegram;</li>
+            <li>⚙️ Basic error handling when a link cannot be processed; and</li>
+            <li>💬 Support for users experiencing technical issues.</li>
+          </ul>
+
+          <p>
+            Feature availability may change. Not every link is guaranteed
+            to work, and results depend on technical and external restrictions.
+          </p>
         </section>
 
         <section id="data">
-          <h2>📥 2. Information that may be processed</h2>
-          <p>Depending on the implementation, the bot may process:</p>
+          <h2>📥 3. Information That May Be Processed</h2>
+
+          <p>
+            When you interact with FapHouse Downloader Bot, the following
+            information may be processed depending on its configuration:
+          </p>
+
           <ul>
             <li>Telegram user ID and messages sent to the bot;</li>
-            <li>links submitted for processing and related media metadata;</li>
-            <li>temporary files created to deliver a requested result; and</li>
-            <li>technical logs, such as timestamps and error reports.</li>
+            <li>FapHouse links submitted for processing;</li>
+            <li>Available video metadata, such as title, thumbnail, or duration;</li>
+            <li>Temporary files created during processing, if applicable; and</li>
+            <li>Technical logs, timestamps, and error reports, if enabled.</li>
           </ul>
-          <p>Please do not send passwords, payment details, or unrelated sensitive information to the bot.</p>
+
+          <p>
+            The exact information handled depends on the bot's actual code
+            and connected services. Please do not send passwords, payment
+            details, or unrelated sensitive information.
+          </p>
         </section>
 
         <section id="use">
-          <h2>⚙️ 3. How information may be used</h2>
-          <p>Information may be used to process submitted links, return results, troubleshoot failures, maintain reliability, prevent misuse, and respond to support requests.</p>
+          <h2>⚙️ 4. How Link Processing Works</h2>
+
+          <ol>
+            <li>You submit a supported FapHouse link to the Telegram bot.</li>
+            <li>The bot attempts to validate and process the submitted link.</li>
+            <li>The bot may retrieve available video information or content.</li>
+            <li>If processing succeeds, the bot may return the result through Telegram.</li>
+          </ol>
+
+          <p>
+            Processing may fail if a link is invalid, unavailable, restricted,
+            or unsupported. The bot does not guarantee successful processing
+            of every submitted link.
+          </p>
         </section>
 
         <section id="third-party">
-          <h2>🔗 4. Third-party services</h2>
-          <p>Processing a link may involve Telegram, the linked website, hosting providers, or other services used by the bot. These services may receive the technical information needed to handle the request and are governed by their own privacy terms.</p>
+          <h2>🔗 5. Third-Party Services</h2>
+
+          <p>
+            The bot may rely on Telegram, FapHouse, hosting providers,
+            and other services required to process links and deliver results.
+          </p>
+
+          <p>
+            When a request is processed, relevant links or technical requests
+            may be handled by those services. Each third-party service has
+            its own privacy practices and terms.
+          </p>
         </section>
 
         <section id="retention">
-          <h2>🗄️ 5. Storage, security, and retention</h2>
-          <p>Information and temporary files may be processed or stored for periods determined by the deployed configuration. The operator should document actual retention periods, access controls, and deletion practices. No online service can guarantee absolute security.</p>
+          <h2>🗄️ 6. Storage, Security, and Retention</h2>
+
+          <p>
+            Depending on the deployed configuration, submitted links,
+            technical logs, and temporary files may be processed or stored
+            for the time needed to operate the bot.
+          </p>
+
+          <p>
+            Actual storage periods and deletion practices depend on the
+            bot's implementation and hosting environment. Access to stored
+            information should be restricted to authorized purposes.
+          </p>
+
+          <p>
+            No online service can guarantee absolute security.
+          </p>
         </section>
 
         <section id="sharing">
-          <h2>🤝 6. Sharing of information</h2>
-          <p>Information may be transmitted to service providers when needed to operate the bot, or disclosed where required by applicable law. The operator must ensure this description matches the bot's actual practices.</p>
+          <h2>🤝 7. Sharing of Information</h2>
+
+          <p>
+            Information may be transmitted to services needed to process
+            submitted links, operate the bot, deliver results, or troubleshoot
+            technical issues.
+          </p>
+
+          <p>
+            Information may also be disclosed when required by applicable law.
+            The bot's operator should ensure that this description reflects
+            the service's actual data-handling practices.
+          </p>
         </section>
 
         <section id="choices">
-          <h2>🧑‍💻 7. Your choices and data requests</h2>
-          <p>You may stop using the bot at any time. For questions about information associated with your use, or to request deletion where applicable, contact the developer using the support details below. Some information may remain in backups or technical logs for a limited period.</p>
+          <h2>🧑‍💻 8. Your Choices and Data Requests</h2>
+
+          <p>
+            You may stop using FapHouse Downloader Bot at any time.
+            If you have questions about information associated with your
+            use or wish to request deletion where applicable, contact
+            the developer through the support details below.
+          </p>
+
+          <p>
+            Some technical logs or backups may remain for a limited period
+            if they are maintained by the deployed service.
+          </p>
         </section>
 
         <section id="safety">
-          <h2>🛡️ 8. Appropriate use and age restrictions</h2>
-          <p>Use the bot only where you are legally permitted to access the linked service and content. Follow applicable laws, age restrictions, and the linked service's terms. Do not use the bot to access content unlawfully or without authorization.</p>
+          <h2>🛡️ 9. Appropriate and Responsible Use</h2>
+
+          <p>
+            Use the bot only to access or process content you are legally
+            permitted to access. Follow applicable laws, age restrictions,
+            and the linked website's terms.
+          </p>
+
+          <p>
+            Do not use the bot to access content unlawfully or without
+            authorization.
+          </p>
         </section>
 
         <section id="changes">
-          <h2>🔄 9. Changes to this policy</h2>
-          <p>This policy may be revised when the bot's features or data practices change. The date at the top should be updated whenever a material revision is published.</p>
+          <h2>🔄 10. Changes to This Privacy Policy</h2>
+
+          <p>
+            This Privacy Policy may be updated when the bot's features,
+            configuration, or data-handling practices change.
+          </p>
+
+          <p>
+            The update date at the top of this page should be revised
+            whenever a material change is published.
+          </p>
         </section>
 
         <section id="contact">
-          <h2>📩 10. Contact &amp; Support</h2>
+          <h2>📩 11. FapHouse Bot Contact &amp; Support</h2>
+
           <div class="contact">
-            <p><strong>👨‍💻 Developer:</strong> AK</p>
-            <p><strong>💬 Support:</strong> <a href="https://t.me/anujedits76" target="_blank" rel="noopener noreferrer">AK</a></p>
+            <p>
+              <strong>🤖 Bot Name:</strong>
+              FapHouse Downloader Bot
+            </p>
+
+            <p>
+              <strong>👨‍💻 Developer:</strong>
+              AK
+            </p>
+
+            <p>
+              <strong>💬 Support:</strong>
+              <a href="https://t.me/anujedits76"
+                 target="_blank"
+                 rel="noopener noreferrer">@anujedits76</a>
+            </p>
           </div>
         </section>
 
         <div class="notice">
-  🔐 <strong>Privacy Commitment:</strong> We respect your privacy and aim to handle information responsibly.
-  Information is processed only as needed to operate and maintain the bot,
-  in accordance with its actual features and applicable privacy requirements.
-  For privacy questions or data-related requests, please contact our support team.</div>
+          🔐 <strong>Privacy Commitment:</strong>
+          This page explains the types of information that may be processed
+          when using FapHouse Downloader Bot. Actual data handling depends
+          on the bot's deployed code, configuration, and connected services.
+          For privacy questions or data-related requests, please contact
+          the support team.
+        </div>
+
       </main>
     </div>
 
     <footer>
-      <p>🔐 Privacy matters. Thank you for using <strong>FapHouse Downloader Bot</strong>.</p>
-      <p>© 2026 AK · Privacy Policy</p>
+      <p>
+        🔐 Privacy matters. Thank you for using
+        <strong>FapHouse Downloader Bot</strong>.
+      </p>
+
+      <p>© 2026 AK · FapHouse Downloader Bot Privacy Policy</p>
     </footer>
+
   </div>
 </body>
 </html>
